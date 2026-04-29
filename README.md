@@ -100,3 +100,6 @@ Backup location: `%LOCALAPPDATA%\Packages\...\LocalState\t3rminal_backups\`
 - Changes take effect after restarting Windows Terminal.
 - T3RMIN4L never modifies your profiles list — it only writes to `profiles.defaults` and `schemes`.
 - Built-in themes (T3RMIN4L Dark, Cyber Neon, Midnight Frost, Amber Terminal) cannot be removed.
+- use cd C:\Users\PUTUSERNAMEHERE\Downloads\T3RMIN4L\T3RMIN4L
+pip install -r requirements.txt
+python main.py
