@@ -92,10 +92,6 @@ opacity: 85;
 | Amber Terminal | Retro amber monochrome |
 | Crimson Void | Deep red, rose tones |
 | Arctic Pulse | Ice blue, teal accents |
-| Matrix Green | Classic green-on-black |
-| Violet Core | Deep purple, violet accents |
-| Obsidian Glass | VS Code Dark+ inspired |
-| Retro DOS | Classic blue DOS palette |
 
 ---
 
@@ -114,9 +110,9 @@ They survive:
 
 | Format | Support |
 |--------|---------|
-| PNG | ✅ Full |
-| JPG / JPEG | ✅ Full |
-| GIF | ⚠️ First frame extracted automatically |
+| PNG |  Full |
+| JPG / JPEG |  Full |
+| GIF |  First frame extracted automatically |
 
 Controls: opacity, stretch mode, alignment, blur, acrylic.
 
