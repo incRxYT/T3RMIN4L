@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T3RMIN4L</title>
+  <style>
+    :root {
+      --bg:#05050d;
+      --surface:rgba(13,13,26,.78);
+      --cyan:#00ffcc;
+      --purple:#bd93f9;
+      --red:#ff5555;
+      --text:#e8e8f0;
+      --muted:#6666aa;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Consolas,monospace;background:radial-gradient(circle at top right,#111126,var(--bg));color:var(--text);line-height:1.6}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{padding:5rem 0 4rem}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0}
+    .logo{font-size:1.3rem;color:var(--cyan);letter-spacing:.2rem}
+    .btn{display:inline-block;padding:.9rem 1.4rem;border:1px solid var(--cyan);border-radius:16px;color:var(--cyan);text-decoration:none;transition:.25s;background:transparent}
+    .btn:hover{background:var(--cyan);color:#000;box-shadow:0 0 24px rgba(0,255,204,.25)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center}
+    h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1}
+    .accent{color:var(--cyan)}
+    .sub{margin:1rem 0 2rem;color:#c8c8d8;max-width:40rem}
+    .glass{background:var(--surface);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.06);border-radius:24px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .terminal{padding:1.4rem}
+    .bar{display:flex;gap:.4rem;margin-bottom:1rem}.dot{width:10px;height:10px;border-radius:50%;background:var(--muted)}
+    .line{margin:.5rem 0}.prompt{color:var(--cyan)}.cmd{color:var(--purple)}
+    section{padding:4rem 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem}
+    .card{padding:1.5rem}.card h3{color:var(--cyan);margin-bottom:.6rem}
+    .code{padding:1.5rem;white-space:pre-wrap;color:var(--purple)}
+    .themes{display:grid;gap:1rem}
+    .theme-row{padding:1rem}
+    .swatches{display:flex;gap:.5rem;margin-top:.8rem}.swatch{width:28px;height:28px;border-radius:8px}
+    ol{padding-left:1.4rem;margin-top:1rem}
+    footer{padding:3rem 0;color:var(--muted);text-align:center}
+    a.link{color:var(--cyan);text-decoration:none}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">T3RMIN4L</div>
+      <a href="#install" class="btn">Download</a>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <h1>Theme your <span class="accent">terminal</span><br>No JSON required.</h1>
+        <p class="sub">A lightweight Windows app for creating, previewing, and applying stunning Windows Terminal themes with live previews, Quick Theme syntax, and backup protection built in.</p>
+        <a href="#features" class="btn">Explore Features</a>
+      </div>
+      <div class="glass terminal">
+        <div class="bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+        <div class="line"><span class="prompt">PS&gt;</span> <span class="cmd">load-theme cyber-neon</span></div>
+        <div class="line">Theme applied successfully</div>
+        <div class="line"><span class="prompt">PS&gt;</span> background.gif enabled</div>
+      </div>
+    </header>
+
+    <section id="features">
+      <div class="grid">
+        <div class="glass card"><h3>Live Preview</h3><p>See every color and background update instantly before applying changes.</p></div>
+        <div class="glass card"><h3>Quick Theme</h3><p>Create themes using clean CSS-like syntax instead of editing raw terminal JSON.</p></div>
+        <div class="glass card"><h3>Background Support</h3><p>Use PNG, JPG, or GIF backgrounds with opacity, blur, and acrylic controls.</p></div>
+        <div class="glass card"><h3>Auto Backup</h3><p>Every change is backed up so restoring a previous setup takes one click.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="glass code">background: #0a0a0f;
+foreground: #ffffff;
+cursor: #00ffcc;
+font: Cascadia Code;
+opacity: 85;</div>
+    </section>
+
+    <section>
+      <h2 style="margin-bottom:1rem;color:var(--cyan)">Built-in Themes</h2>
+      <div class="themes">
+        <div class="glass theme-row">T3RMIN4L Dark<div class="swatches"><div class="swatch" style="background:#05050d"></div><div class="swatch" style="background:#00ffcc"></div><div class="swatch" style="background:#bd93f9"></div></div></div>
+        <div class="glass theme-row">Cyber Neon<div class="swatches"><div class="swatch" style="background:#0b0f14"></div><div class="swatch" style="background:#39ff14"></div><div class="swatch" style="background:#ff00aa"></div></div></div>
+        <div class="glass theme-row">Midnight Frost<div class="swatches"><div class="swatch" style="background:#081018"></div><div class="swatch" style="background:#8be9fd"></div><div class="swatch" style="background:#f8f8f2"></div></div></div>
+      </div>
+    </section>
+
+    <section id="install" class="glass card">
+      <h2 style="color:var(--cyan)">Install</h2>
+      <ol>
+        <li>pip install -r requirements.txt</li>
+        <li>python main.py</li>
+      </ol>
+      <p style="margin-top:1rem">Source code: <https://github.com/incRxYT/T3RMIN4L>GitHub Repository</a></p>
+    </section>
+
+    <footer>
+      T3RMIN4L — Stop editing configs. Start Customizing.
+    </footer>
+  </div>
+</body>
+</html>
