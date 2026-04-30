@@ -92,6 +92,12 @@ opacity: 85;
 | Amber Terminal | Retro amber monochrome |
 | Crimson Void | Deep red, rose tones |
 | Arctic Pulse | Ice blue, teal accents |
+| Matrix Green | Classic green-on-black |
+| Violet Core | Deep purple, violet accents |
+| Obsidian Glass | VS Code Dark+ inspired |
+| Retro DOS | Classic blue DOS palette |
+
+
 
 ---
 
